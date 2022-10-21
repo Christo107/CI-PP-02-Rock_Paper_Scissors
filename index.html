@@ -7,14 +7,29 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/8e7a08758e.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>Rock Paper Scissorst</title>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
     <header>
         <h1>Rock Paper Scissors</h1>
     </header>
     <section>
-
+        <div id="game container" class="container">
+            <div id="choice-selection-btns">
+                <button aria-label="rock">Rock</button>
+                <button aria-label="paper">Paper</button>
+                <button aria-label="scissors">Scissors</button>
+            </div>
+            <div id="result-modal">You Win!</div>
+            <div id="choice-container" class="container">
+                <div id="player-area">
+                    <h2>Player</h2><span>Score: </span>
+                </div>
+                <div id="computer-area">
+                    <h2>Computer</h2><span>Score: </span>
+                </div>
+            </div>
+        </div>
     </section>
     <footer>
         <p>Footer links go here</p>
