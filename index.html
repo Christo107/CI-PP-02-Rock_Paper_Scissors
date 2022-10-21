@@ -15,24 +15,32 @@
     </header>
     <main>
         <div id="game-container" class="container">
-            <div id="choice-selection-btns">
-                <button aria-label="rock">Rock</button>
-                <button aria-label="paper">Paper</button>
-                <button aria-label="scissors">Scissors</button>
-            </div>
             <div id="result-modal">You Win!</div>
             <div id="choice-container" class="choice-container">
                 <div id="player-area" class="choice-area">
-                    <h2>Player</h2><br>
-                    <span>Score: </span><br>
-                    <img id="player-choice-img" src="./assets/images/">
+                    <div class="choice-area-header">
+                        <h2>Player</h2><br>
+                        <span>Score: </span>
+                    </div>
+                    <div>
+                        <img id="player-choice-img" class="choice-img" src="./assets/images/scissors.png" alt ="">
+                    </div>
                 </div>
                 <div><span>Vs.</span></div>
                 <div id="computer-area" class="choice-area">
-                    <h2>Computer</h2><br>
-                    <span>Score: </span><br>
-                    <img id="computer-choice-img" src="./assets/images/">
+                    <div class="choice-area-header">
+                        <h2>Computer</h2><br>
+                        <span>Score: </span>
+                    </div>
+                    <div>
+                        <img id="computer-choice-img"  class="choice-img" src="./assets/images/paper.png" alt ="">
+                    </div>
                 </div>
+            </div>
+            <div id="choice-selection-btns">
+                <button aria-label="rock" class="option-btns">Rock</button>
+                <button aria-label="paper" class="option-btns">Paper</button>
+                <button aria-label="scissors" class="option-btns">Scissors</button>
             </div>
         </div>
     </main>
