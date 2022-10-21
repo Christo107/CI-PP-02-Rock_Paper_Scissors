@@ -48,16 +48,36 @@ header h1 {
 
 .option-btns {
     height: 125px;
-    min-width: 25%;
+    min-width: 125px;
     margin: 0 5px;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    border-radius: 50%;
     transition:all 250ms;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .option-btns:hover {
     background-color:rgb(32, 32, 32);
     color:#ccc;
+}
+
+#versus-container {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(32, 32, 32);
+    color:#ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail-choice-img {
+    height: 50%;
 }
 
 .choice-container {
