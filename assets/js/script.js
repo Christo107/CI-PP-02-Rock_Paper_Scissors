@@ -20,6 +20,7 @@ let result;
 for (let button of buttons) {
     button.addEventListener("click", function() {
         playerOption = this.getAttribute("data-choice");
+        console.log(playerOption);
         playGame(playerOption);
     });
 }
@@ -36,6 +37,8 @@ function playGame(playerOption) {
     computerChoiceImg.src = `assets/images/${OPTIONS[computerOption]}.png`;
     computerChoiceImg.alt = OPTIONS[computerOption];
 
+    console.log(computerOption)
+
     checkWinner();
     
     updateScores(result);
@@ -45,23 +48,23 @@ function playGame(playerOption) {
  * Checks whether player or computer has won the current round
  */
 
- function checkWinner() {
-     if (playerOption === "rock" && computerOption === 2) {
+ function checkWinner(playerOption, computerOption) {
+     if (playerOption === 0 && computerOption === 2) {
          resultMessage.innerHTML = "You win! Lets have another round!";
      }
-     else if (playerOption === "rock" && computerOption === 1) {
+     else if (playerOption === 0 && computerOption === 1) {
          resultMessage.innerHTML = "You Lose! Lets have another round!";
      }
-     else if (playerOption === "paper" && computerOption === 0) {
+     else if (playerOption === 1 && computerOption === 0) {
          resultMessage.innerHTML = "You Win! Lets have another round!";
      }     
-     else if (playerOption === "paper" && computerOption === 2) {
+     else if (playerOption === 1 && computerOption === 2) {
          resultMessage.innerHTML = "You Lose! Lets have another round!";
      }
-     else if (playerOption === "scissors" && computerOption === 1) {
+     else if (playerOption === 2 && computerOption === 1) {
          resultMessage.innerHTML = "You Win! Lets have another round!";
      } 
-     else if (playerOption === "scissors" && computerOption === 0) {
+     else if (playerOption === 2 && computerOption === 0) {
         resultMessage.innerHTML = "You Lose! Lets have another round!";
      } 
      else {
