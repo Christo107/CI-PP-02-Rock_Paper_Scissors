@@ -3,8 +3,8 @@
  */
 // Constants declaration code below based on Code Institute Rock paper Scissors game
 const buttons = document.getElementsByClassName("option-btns");
-const playerScore = document.getElementById("player-score");
-const computerScore = document.getElementById("computer-score");
+const playerScore = document.getElementById("player-score").textContent;
+const computerScore = document.getElementById("computer-score").textContent;
 const playerChoiceImg = document.getElementById("player-choice-img");
 const computerChoiceImg = document.getElementById("computer-choice-img");
 const OPTIONS = ["rock", "paper", "scissors"]
@@ -51,21 +51,27 @@ function playGame(playerOption) {
  function checkWinner() {
      if (playerOption == '0' && computerOption == '2') {
         resultMessage.innerHTML = "You win! Lets have another round!";
+        playerScore++;
      }
      else if (playerOption == '0' && computerOption == '1') {
         resultMessage.innerHTML = "You Lose! Lets have another round!";
+        computerScore++;
      }
      else if (playerOption == '1' && computerOption == '0') {
         resultMessage.innerHTML = "You Win! Lets have another round!";
+        playerScore++;
      }     
      else if (playerOption == '1' && computerOption == '2') {
         resultMessage.innerHTML = "You Lose! Lets have another round!";
+        computerScore++;
      }
      else if (playerOption == '2' && computerOption == '1') {
         resultMessage.innerHTML = "You Win! Lets have another round!";
+        playerScore++;
      } 
      else if (playerOption == '2' && computerOption == '0') {
         resultMessage.innerHTML = "You Lose! Lets have another round!";
+        computerScore++;
      } 
      else {
         resultMessage.innerHTML = "Its a draw! Lets have another round!";

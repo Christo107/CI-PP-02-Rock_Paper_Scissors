@@ -52,6 +52,7 @@ header h1 {
     min-width: 125px;
     margin: 0 5px;
     font-size: 1.25em;
+    border: 1px solid #3a3a3a;
     border-radius: 50%;
     transition:all 250ms;
     cursor: pointer;
@@ -102,7 +103,6 @@ header h1 {
     align-items: center;
     width: 40vw;
     height: 90%;
-    background-color: #ccc;
     margin: 25px;
     position: relative;
 }
