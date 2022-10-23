@@ -31,6 +31,7 @@ header h1 {
 #result-text {
     height: 25px;
     font-size: 1.75em;
+    padding: 0 5px;
 }
 
 .container {
@@ -184,6 +185,9 @@ footer {
         height: 75px;
         width: 75px;
         font-size: .85em;
+    }
 
+    #result-text {
+        font-size: 1.5em;
     }
 }
