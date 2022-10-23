@@ -24,6 +24,7 @@ body {
 
 header h1 {
     margin: 25px;
+    font-size: 1.75em;
 }
 
 #result-text {
@@ -91,7 +92,7 @@ header h1 {
     width: 95vw;
     max-width: 1200px;
     min-height: 500px;
-    max-height: 85vw;
+    max-height: 85vh;
     background-color:rgb(5 104 114 / 94%);
     display: flex;
     flex-direction: row;
@@ -136,4 +137,28 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 360px) {
+    .choice-container {
+        flex-direction: column;
+        max-height: 60vh;
+    }
+
+    .choice-area {
+        min-height: 185px;
+        flex-direction: row;
+    }
+
+    .choice-area-header {
+        position: relative;
+        top: 0;
+        min-width: 100%;
+    }
+
+    #versus-container {
+        height: 75px;
+    }
 }
