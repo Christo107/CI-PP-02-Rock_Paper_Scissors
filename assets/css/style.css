@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: rgb(32, 32, 32);
+    color: rgb(214, 214, 214);
     background-color: #ccc;
     display: flex;
     flex-direction: column;
@@ -25,11 +25,12 @@ body {
 header h1 {
     margin: 25px 5px;
     font-size: 1.75em;
+    color:rgb(32, 32, 32);
 }
 
 #result-text {
     height: 25px;
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 .container {
@@ -41,7 +42,7 @@ header h1 {
 
 #game-container {
     width: 100%;
-    background-color:rgb(5 104 114 / 94%);
+    background-color:rgba(4, 80, 88, 0.932);
     margin-bottom: 125px;
     padding-bottom: 25px;
     padding-top: 25px;
