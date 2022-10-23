@@ -92,6 +92,7 @@ header h1 {
 
 .thumbnail-choice-img {
     height: 50%;
+    margin-bottom: 5px;
 }
 
 .choice-container {
