@@ -99,7 +99,7 @@ header h1 {
 .choice-container {
     width: 95vw;
     max-width: 1800px;
-    min-height: 500px;
+    min-height: 350px;
     max-height: 85vh;
     display: flex;
     flex-direction: row;
@@ -167,6 +167,12 @@ footer {
 
 /* media queries */
 
+@media screen and (max-width: 768px) {
+    .choice-area {
+        min-height: 300px;
+    }
+}
+
 @media screen and (max-width: 360px) {
     .choice-container {
         flex-direction: column;
@@ -175,13 +181,14 @@ footer {
 
     .choice-area {
         min-height: 185px;
+        width: 100%;
         flex-direction: row;
     }
 
     .choice-area-header {
         position: relative;
         top: 0;
-        min-width: 100%;
+        max-width: 50%;
     }
 
     #versus-container {
@@ -190,7 +197,6 @@ footer {
 
     .choice-img {
         margin-top: 0;
-        margin-left: 20px;
     }
 
     .option-btns {
@@ -202,4 +208,8 @@ footer {
     #result-text {
         font-size: 1.5em;
     }
+}
+
+@media screen and (max-width: 600px) {
+
 }
