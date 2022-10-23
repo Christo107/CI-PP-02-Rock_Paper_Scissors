@@ -129,9 +129,9 @@ header h1 {
 
 .choice-img {
     max-width: 35vw;
-    width: 300px;
+    width: 400px;
     max-height: 50%;
-    margin-top: 25px;
+    margin-top: 75px;
 }
 
 .controls-container {
@@ -174,4 +174,10 @@ footer {
     #versus-container {
         height: 75px;
     }
+
+    .choice-img {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    
 }
