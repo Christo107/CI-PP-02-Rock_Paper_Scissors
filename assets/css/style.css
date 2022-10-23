@@ -71,6 +71,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color:#ccc;
 }
 
 .option-btns:hover {
@@ -143,6 +144,11 @@ header h1 {
 
 .rules-container {
     margin-top: 10px;
+    color:rgb(32, 32, 32);
+    background-color: #ccc;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 footer {
