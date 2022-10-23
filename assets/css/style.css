@@ -138,6 +138,11 @@ header h1 {
 
 .controls-container {
     margin-top: -25px;
+    padding: 0 10px;
+}
+
+.rules-container {
+    margin-top: 10px;
 }
 
 footer {
