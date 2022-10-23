@@ -179,5 +179,11 @@ footer {
         margin-top: 0;
         margin-left: 20px;
     }
-    
+
+    .option-btns {
+        height: 75px;
+        width: 75px;
+        font-size: .85em;
+
+    }
 }
