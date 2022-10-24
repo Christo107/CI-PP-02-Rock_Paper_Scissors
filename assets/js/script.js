@@ -3,12 +3,14 @@
  */
 // Constants declaration code below based on Code Institute Rock paper Scissors game
 const buttons = document.getElementsByClassName("option-btns");
-let playerScore = document.getElementById("player-score");
-let computerScore = document.getElementById("computer-score");
+const playerScoreSpan = document.getElementById("player-score").innerHTML;
+const computerScoreSpan = document.getElementById("computer-score").innerHTML;
 const playerChoiceImg = document.getElementById("player-choice-img");
 const computerChoiceImg = document.getElementById("computer-choice-img");
 const OPTIONS = ["rock", "paper", "scissors"]
 
+let playerScore = 0;
+let computerScore = 0;
 let resultMessage = document.getElementById("result-text");
 let playerOption;
 let computerOption;
@@ -27,6 +29,8 @@ for (let button of buttons) {
 
 /**
  * Main game code based on Code Institute Rock paper Scissors game
+ * This function selects the image and alt text of the player's choice on the DOM
+ * The computer option is randomnly selected and update also
  */
 function playGame(playerOption) {
     playerChoiceImg.src = `assets/images/${OPTIONS[playerOption]}.png`;
@@ -37,11 +41,7 @@ function playGame(playerOption) {
     computerChoiceImg.src = `assets/images/${OPTIONS[computerOption]}.png`;
     computerChoiceImg.alt = OPTIONS[computerOption];
 
-    console.log(computerOption)
-
     checkWinner();
-    
-    updateScores(result);
 }
 
 /**
@@ -51,27 +51,27 @@ function playGame(playerOption) {
  function checkWinner() {
      if (playerOption == '0' && computerOption == '2') {
         resultMessage.innerHTML = "You win! Lets have another round!";
-        incrementPlayerScore();
+        incrementPlayerScoreSpan();
      }
      else if (playerOption == '0' && computerOption == '1') {
         resultMessage.innerHTML = "You Lose! Lets have another round!";
-        incrementComputerScore();
+        incrementComputerScoreSpan();
      }
      else if (playerOption == '1' && computerOption == '0') {
         resultMessage.innerHTML = "You Win! Lets have another round!";
-        incrementPlayerScore();
+        incrementPlayerScoreSpan();
      }     
      else if (playerOption == '1' && computerOption == '2') {
         resultMessage.innerHTML = "You Lose! Lets have another round!";
-        incrementComputerScore();
+        incrementComputerScoreSpan();
      }
      else if (playerOption == '2' && computerOption == '1') {
         resultMessage.innerHTML = "You Win! Lets have another round!";
-        incrementPlayerScore();
+        incrementPlayerScoreSpan();
      } 
      else if (playerOption == '2' && computerOption == '0') {
         resultMessage.innerHTML = "You Lose! Lets have another round!";
-        incrementComputerScore();
+        incrementComputerScoreSpan();
      } 
      else {
         resultMessage.innerHTML = "Its a draw! Lets have another round!";
@@ -84,12 +84,24 @@ function playGame(playerOption) {
  * the functions below extract the current scores for the player and computer and then increment by 1.
  * these functions are called in the checkWinner function above
  */
-function incrementPlayerScore() {
+function incrementPlayerScoreSpan() {
    let oldScore = parseInt(document.getElementById("player-score").innerText);
    document.getElementById("player-score").innerText = ++oldScore;
 }
 
-function incrementComputerScore() {
+function incrementComputerScoreSpan() {
    let oldScore = parseInt(document.getElementById("computer-score").innerText);
    document.getElementById("computer-score").innerText = ++oldScore;
+}
+
+/**
+ * Ends game when either player or computer reaches 10 points
+ */
+function gameOver() {
+   if (playerScore === 3) {
+      resultMessage.innerHTML = "You have won this game! Well done";
+   } 
+   if (computerScore === 3) {
+      resultMessage.innerHTML = "The Computer has won this game! Hard luck";
+   }
 }
