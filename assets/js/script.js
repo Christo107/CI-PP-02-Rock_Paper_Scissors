@@ -9,8 +9,8 @@ const playerChoiceImg = document.getElementById("player-choice-img");
 const computerChoiceImg = document.getElementById("computer-choice-img");
 const OPTIONS = ["rock", "paper", "scissors"]
 
-let playerScore = 0;
-let computerScore = 0;
+// let playerScore = 0;
+// let computerScore = 0;
 let resultMessage = document.getElementById("result-text");
 let playerOption;
 let computerOption;
@@ -95,13 +95,17 @@ function incrementComputerScoreSpan() {
 }
 
 /**
- * Ends game when either player or computer reaches 10 points
+ * Shows gameOver modal to congratulate winner when either player or computer reaches 10 points
  */
 function gameOver() {
-   if (playerScore === 3) {
-      resultMessage.innerHTML = "You have won this game! Well done";
+   let gameOverModal = document.getElementById("game-over-modal-container");
+
+   if(playerScoreSpan == '3') {
+      gameOverModal.classList.remove('hide');
+      gameOverModal.querySelector('h4') = "You have won the game! Congrats! Let's play again?";
    } 
-   if (computerScore === 3) {
-      resultMessage.innerHTML = "The Computer has won this game! Hard luck";
+   if(computerScoreSpan == '3') {
+      gameOverModal.classList.remove('hide');
+      gameOverModal.querySelector('h4') = "The Computer has won this game! Hard luck";
    }
 }

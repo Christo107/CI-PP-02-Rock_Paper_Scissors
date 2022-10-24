@@ -160,7 +160,8 @@ header h1 {
     border-radius: 10px;
     box-shadow: 5px 5px 8px 3px #3a3a3a;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:space-evenly;
     align-items: center;
     top: 150px; 
     margin: auto;
@@ -184,7 +185,7 @@ footer {
     bottom: 0;
     left: 0;
     min-height: 50px;
-    width: 100vw;
+    width: 100%;
     background-color:rgb(32, 32, 32);
     color: #ccc;
     display: flex;
