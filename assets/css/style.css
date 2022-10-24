@@ -151,6 +151,34 @@ header h1 {
     padding: 5px;
 }
 
+.game-over {
+    width: 45vw;
+    height: 50vh;
+    color:rgb(32, 32, 32);
+    background-color: #ccc;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 3px #3a3a3a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 150px; 
+    margin: auto;
+    z-index: 999;
+}
+
+.game-over-modal-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 58, 58, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
     position: absolute;
     bottom: 0;
@@ -185,6 +213,9 @@ footer {
     font-size: 200%;
 }
 
+.hide {
+    display: none;
+}
 
 /* media queries */
 
