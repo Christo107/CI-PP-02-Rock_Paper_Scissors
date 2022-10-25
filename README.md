@@ -42,21 +42,24 @@ The live website on Github pages can be accessed at the following link: [View my
     - The header contains the logo(name of the game) in a simple easy to read font to announce what the game is to the user.
     - A subtitle also provides a description of the game and who the game is suitable for.
 
-![Header Image](#)
+![Header Image](./assets/images/readme_images/header_area.png)
 
 - #### **Game Area Section**
     - This section contains the main game elements. The player can choose their 'weapon' from the three options and ultimately try to win points. It is divided in to a result announcement section, the scores area, player and computer choice area and finally the controls area.
     - At the top of the game area, there is space for the result announcement of the winner of each round. This is blank by default, but javascript code runs with the following messages depending on the result - "You Win! Let's have another round", "You lose! Let's have another round" and "It's a draw! Let's have another round". The message encourages the user to continue playing regardless of the outcome of each round.
+    [Result area image](./assets/images/readme_images/results_area.png)
     - Beneath this, the choice area for both the player and computer is shown, with the player area on the left, and computer on the right. The choice area consists of the user header, the current score and an image of their currently selected choice.(On initial load, an image of the 3 options is displayed as a placeholder before the first choice is made). The JS script changes the image depending on the choice that is made from the control area below.
+    [Player area image](./assets/images/readme_images/player_area.png)
     - At the base of the game area is the controls and rules section. A message instructing the player to make a choice is shown to direct the user how to start the game. Below this, three circle buttons are displayed with a thumbnail image of each option and its corresponding name.
     - Underneath the controls area is a small container displaying the simple rules to the player. They are always displayed for usability and reference.
+    [Player area image](./assets/images/readme_images/controls_area.png)
 
-![Game Area Image](#)
+![Game Area Image](./assets/images/readme_images/game_area.png)
 
 - #### **Footer**
     - This section is simple and only contains links to the developer's Github repositories and linkedin pages. It also contains a copyright notice and the name of the developer. All links open in a new tab.
 
-![Footer section image](#)
+[Footer section image](./assets/images/readme_images/footer_area.png))
 
 ## User Experience
 
