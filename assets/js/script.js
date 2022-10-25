@@ -1,10 +1,10 @@
 /**
  * Declare constants for DOM elements and possible choices
  */
-// Constants declaration code below based on Code Institute Rock paper Scissors game
+// Constants declaration code below based on Code Institute Rock Paper Scissors game
 const buttons = document.getElementsByClassName("option-btns");
-const playerScoreSpan = document.getElementById("player-score");
-const computerScoreSpan = document.getElementById("computer-score");
+let playerScoreSpan = document.getElementById("player-score");
+let computerScoreSpan = document.getElementById("computer-score");
 const playerChoiceImg = document.getElementById("player-choice-img");
 const computerChoiceImg = document.getElementById("computer-choice-img");
 const OPTIONS = ["rock", "paper", "scissors"]
@@ -12,6 +12,8 @@ const OPTIONS = ["rock", "paper", "scissors"]
 let resultMessage = document.getElementById("result-text");
 let playerOption;
 let computerOption;
+
+
 
 /**
  * Adding event listeners to buttons
@@ -45,7 +47,6 @@ function playGame(playerOption) {
 /**
  * Checks whether player or computer has won the current round
  */
-
  function checkWinner() {
      if (playerOption == '0' && computerOption == '2') {
         resultMessage.innerHTML = "You win! Lets have another round!";
@@ -97,14 +98,28 @@ function incrementComputerScoreSpan() {
  */
 function gameOver() {
 
-   const gameOverModal = document.getElementById("game-over-modal-container");
+   let playerScore = parseInt(document.getElementById("player-score").innerText);
+   let computerScore = parseInt(document.getElementById("computer-score").innerText);
 
-   if(playerScoreSpan == 3) {
+   let gameOverModal = document.getElementById("game-over-modal-container");
+
+   if(playerScore === 3) {
          gameOverModal.classList.remove("hide");
          gameOverModal.querySelector('h4') = "You have won this game! Congrats!";
     } 
-   else if(computerScoreSpan == 3) {
+   else if(computerScore === 3) {
          gameOverModal.classList.remove("hide");
          gameOverModal.querySelector('h4') = "The Computer has won this game! Hard luck";
     }
+}
+
+// Add event listener to restart game button to trigger resetGame function
+document.getElementById("restart-game").addEventListener("click", function() {
+   resetGame();
+})
+// Resets scores to zero and populates results message to say Game restarted!
+function resetGame() {
+   playerScoreSpan.innerText = 0;
+   computerScoreSpan.innerText = 0;
+   resultMessage.innerHTML = "Game restarted!";
 }

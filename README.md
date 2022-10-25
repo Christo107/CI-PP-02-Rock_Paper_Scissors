@@ -161,11 +161,16 @@ The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Pap
 ![Overlapping Content Bug](./assets/images/bugs/overlapping_%20content_bug.png)
 
 ### Known Bugs
-- 
+- GameOver function is not triggering once player or computer reaches 10 points. At this point, a gameOver modal should be revealed annoncing the winner, however this is not working at present.
 
 ## Credits
 
-### Content 
+### Code
+
+- Some game javascript code was based on Code Institute's Rock Paper Scissors example. See code comments for details of which code segments this applies to.
+- Some game javascript code was based on Code Institute's Love Maths example. See code comments for details of which code segments this applies to.
+
+### Content
 
 - The text content of the website was written by the developer.
 - The social media icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
