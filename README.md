@@ -54,60 +54,47 @@ The live website on Github pages can be accessed at the following link: [View my
 ![Game Area Image](#)
 
 - #### **Footer**
-    - This section displays some important information regarding the location of the cafe. A large embedded google map link is included along with the address, telephone and email address of the cafe.
-    - A list of the cafe's opening hours is included so customers are aware of when they can visit during the week
-    - Links to the cafe's social media accounts are also present to encourage engagement on social media networks, and these all open in a new tab to allow the user to keep the main website open while they might be browsing the other links.
+    - This section is simple and only contains links to the developer's Github repositories and linkedin pages. It also contains a copyright notice and the name of the developer. All links open in a new tab.
 
 ![Footer section image](#)
-
-- #### **
 
 ## User Experience
 
 ### User Stories
 
 #### Client Goals
-- A responsive website that is able to be viewed on multiple devices including laptps, tablets and mobile
-- To inform potential or regular customers of the food and drinks options available in the cafe
-- To allow the customer to book a table at the cafe at a time of their choosing
-- To communicate the ethics of the cafe in its use of fresh, locally supplied, organic and vegetarian ingredients
-- A website that entices the user to interact and to whet their appetites to increase footfall at the cafe
+- I want the game to be responsive and so that is able to be played on multiple devices including laptops, tablets and mobile
+- I want the game to be straightforward with clearly understandable instructions
+- I want the game to be accessible to all with clear text, imagery and image descriptions where appropriate
 
-#### First Time Visitor Goals
-- I want to find out what food options are available at the cafe
-- I want to be able to book a table at the cafe 
-- I want to see if the cafe is a nice place to eat
-- I want to find out the location and opening hours of the cafe
-- I want to visit the cafe's social media platforms to view their photos
-- I want to find out the ethos of the cafe and whether it aligns with my own
-
-#### Returning Visitor Goals
-- I want to book a table for my next visit
-- I want to see if the menu options have changed since my last visit
-- I want to visit the cafe's social media platforms to view their photos
-- I want to find out the location and opening hours of the cafe
+#### User Goals
+- As a User I want to know what the game is when I first arrive on the site so I can decide if I want to play
+- As a User I want be able to read the rules of the game easily so I understand what I have to do to play
+- As a User I want to know how to start the game so i can enjoy playing
+- As a User I want to be able to reset the game at any point so I can try again to win
+- As a User I want to be able to exit the game at any point when I have played enough
 
 ## Design
 
 ### Colour Palette
-- The colour palette was chosen to communicate the ethos of the cafe using organic, natural earthy tones that weren't distracting to the visitor, but added to the pleasing nature of the website.
+- The colour palette was chosen to provide a simple easy to view interface for the game. Only one signature colour was used to avoid any unnecessary clash of colours.
 
-![Colour palette for the website](./assets/images/Readme-images/Colour-Palette.jpg)
+![Colour palette for the website](#)
 
 
 ### Typography
-- The Verdana font was used throughout the website, being an accessible sans-serif font face, making the website easy to read for all visitors.
+- The Roboto font was used throughout the website, being an accessible sans-serif font face, making the website easy to read for all visitors.
 
 
 ### Imagery
-- All imagery for the website was downloaded from Pexels.com which provide free to use images. Credits for the images are listed in the credit section below and in the names of the images used.
+- All imagery for the website was downloaded from (https://www.pinclipart.com) which provide free to use images. Credits for the images are listed in the credit section below and in the names of the images used.
 
 
 
 ### Wireframes
 - I designed the website firstly through hand drawn sketches that were then turned into basic wireframes on Figma, before being made into high fidelity wireframes.
 
-![Wireframe selection](./assets/images/Readme-images/Wireframes-selection.jpg)
+![Wireframe selection](#)
 
 
 ### Accessibility
@@ -130,31 +117,27 @@ The live website on Github pages can be accessed at the following link: [View my
 - [Fontawesome](https://fontawesome.com/)
 - [Am I Responsive](http://ami.responsivedesign.is/)
 - [Coolers.co](https://coolors.co)
-- [Pexels.com](https://pexels.com)
 - [Chrome Dev Tools](https://www.google.com/intl/en_ie/chrome/)
 - [A11y color contrast validator](https://color.a11y.com/Contrast/)
-- [Convertico](https://convertio.co/)
 
 ## Testing
 The website was tested for markup and CSS validation, responsive design and accessibility using multiple browsers including Chrome, EDGE, and Firefox.
 The W3C Markup validator retuned several erros on the 3rd September when tested. This included an error for a disallowed element present within a unordered list, an incorrect value for the width of an iframe, and a bad value for an input type on the booking form. These were all rectifiedin order to pass validation, as shown below. On CSS validation on the 8th September, an incorrect value was present in the grid rows style of the About us Card grid element. This was rectified to achieve oa pass on the validation. Please see screenshots of the previous results below:
-[W3C Markup Result 03092022](./assets/images/Readme-images/W3C-Markup-Results-03092022.jpg) [W3C CSS Validator Result 08092022](./assets/images/Readme-images/W3C-CSS%20Validation-Report-08092022.jpg)
+[W3C Markup Result](#) [W3C CSS Validator Result](#)
 
 ### Validator Testing
 - HTML
-    - Before final deployment, no errors were returned when passing through the offical [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fchristo107.github.io%2FCI-PP-01%2F)
+    - Before final deployment, no errors were returned when passing through the offical [W3C validator](#)
 - CSS
-    - Before final deployment, no errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fchristo107.github.io%2FCI-PP-01%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+    - Before final deployment, no errors were found when passing through the official [(Jigsaw) validator](#)
 
 ### Responsiveness Testing
 - The website was tested for responsiveness using the Chrome and Firefox browsers and their associated Developer Tools. 
 #### Chrome
 - A variety of screen sizes were checked for responsiveness using the Developer tools from 4K displays at 2560px wide, laptop sizes 1440px and 1024px, tablets at 768px, and a variety of mobile sizes down to 320px width. All elements maintained functionality and visibility in all scenarios. Real world testing was also conducted on physical devices of various sizes to ensure integrity. No issue was encountered on these.
-- A Lighthouse report was run several times to gauge the performance, accessibility, best practice and SEO scores. Early tests showed a performance score of less than optimal at 77, and accessibility at 93. By optimizing some of the imagery used on the site I was able to achieve a performace score of 93, and then 99. There were a few missing alt tags on images and some colour contrast issues on the original test and once these were resolved, I was able to bring the accessibility score up to 100, with Best Practice and SEO also scoring 100.
+- A Lighthouse report was run several times to gauge the performance, accessibility, best practice and SEO scores. 
 
-![Lighthouse scoring Homepage](./assets/images/Readme-images/Lighthouse-results-09092022.jpg)![Lighthouse scoring Homepage](./assets/images/Readme-images/Lighthouse-results-13092022%201841.jpg)![Lighthouse scoring Homepage](./assets/images/Readme-images/Lighthouse-results-homepage-16092022-1837.jpg)
-
-[Lighthouse scoring Booking Confirmation page](./assets/images/Readme-images/Lighthouse-BookingPage-results-16092022.jpg)
+![Lighthouse scoring](#)![Lighthouse scoring](#)![Lighthouse scoring](#)
 
 ### Accessibility Testing
 - Multiple tests were run on the website using Lighthouse and A11y Color Contrast Accessibility Validator to examine any accessibility issues.
@@ -169,32 +152,25 @@ I used the Gitpod to develop th website and the site was deployed using GitHub P
   - From the source section drop-down menu, select the Master Branch
   - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-The live link can be found here - https://christo107.github.io/CI-PP-01/
+The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Paper_Scissors/
 
 ## Bugs
 ### Fixed Bugs
-- There was an issue with the Book a table call to action button that could not be centred in the hero section. This was fixed by changing the display of the containing wrapper to Flex and an align-items property of center.
-![Book a table CTA button bug](./assets/images/Readme-images/Booktable-button-not-centred.jpg)![Book a table CTA button bug dev tools image](./assets/images/Readme-images/Book-table-button-not%20centred-dev-tools.jpg)
-- Header was overlapping section headers after scrolling to section. This was fixed with code taken from (https://css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/).
-- On small size mobile screens, the social media icons in the footer were running on to a second line instead of remaining on one. This was fixed by reducing the padding between the icons on the media query max-width 360px.
-![Social Media Icons Bug](./assets/images/Readme-images/Mobile-footer-socialmediaicons-bug.jpg)
+-
 
 ### Known Bugs
-- Keyboard navigation via the tab key is restricted in some sections of the page including the food and drinks menu. I have tried to fix the bug using tabindex="0" attribute on elements but this has not resolved the issue.
+- 
 
 ## Credits
 
 ### Content 
 
 - The text content of the website was written by the developer.
-- The hero slider was modelled on the design by Avi Kohn with modifications to suit my needs.(https://codepen.io/AMKohn/details/DZYKEV)
-- The icons in the small mobile nav menu and footer were taken from [Font Awesome](https://fontawesome.com/)
-- The tab-style layout of the food and drinks menu was based upon a design by Wendy Ho, but modified and re-styled by me (https://codepen.io/Wendy-Ho/pen/MWWBvmd)
-- The header section was inspired by the Love Running project by Code Institute.
+- The social media icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 
-- The imagery used in the hero slider, about us section, book a table section and food and drinks menu section were taken from the [Pexels.com](https://pexels.com) website, a source for free to use imagery. I would like to give credit to the creators of the images below-
+- The imagery used in the game was taken from (https://www.pinclipart.com/) and is free to use.
 
 ## Acknowledgements
  - My mentor for his advice and assistance
