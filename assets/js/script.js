@@ -41,6 +41,7 @@ function playGame(playerOption) {
     computerChoiceImg.src = `assets/images/${OPTIONS[computerOption]}.png`;
     computerChoiceImg.alt = OPTIONS[computerOption];
 
+    document.getElementById("restart-game").classList.remove('hide');
     checkWinner();
 }
 
@@ -101,20 +102,18 @@ function gameOver() {
    let playerScore = parseInt(document.getElementById("player-score").innerText);
    let computerScore = parseInt(document.getElementById("computer-score").innerText);
 
-   let gameOverModal = document.getElementById("game-over-modal-container");
-
    if(playerScore === 3) {
-         gameOverModal.classList.remove("hide");
-         gameOverModal.querySelector('h4') = "You have won this game! Congrats!";
+      document.getElementById("game-over-modal-container").classList.remove("hide");
+      gameOverModal.querySelector('h4') = "You have won this game! Congrats!";
     } 
    else if(computerScore === 3) {
-         gameOverModal.classList.remove("hide");
-         gameOverModal.querySelector('h4') = "The Computer has won this game! Hard luck";
+      document.getElementById("game-over-modal-container").classList.remove("hide");
+      gameOverModal.querySelector('h4') = "The Computer has won this game! Hard luck";
     }
 }
 
 // Add event listener to restart game button to trigger resetGame function
-document.getElementById("restart-game").addEventListener("click", function() {
+restartGameBtn = document.getElementById("restart-game").addEventListener("click", function() {
    resetGame();
 })
 // Resets scores to zero and populates results message to say Game restarted!
@@ -124,4 +123,5 @@ function resetGame() {
    resultMessage.innerHTML = "Game restarted!";
    playerChoiceImg.src = `assets/images/rock_paper_scissors.png`;
    computerChoiceImg.src = `assets/images/rock_paper_scissors.png`;
+   document.getElementById("restart-game").classList.add('hide');
 }
