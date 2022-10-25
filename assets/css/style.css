@@ -143,6 +143,12 @@ header h1 {
     transform: scale(1.05)
 }
 
+.option-btns:active {
+    background-color: rgb(7, 118, 131);
+    box-shadow: 0 5px rgb(32, 32, 32, .50);
+    transform: translateY(4px);
+}
+
 .restart-game-btn {
     height: 75px;
     width: 75px;
