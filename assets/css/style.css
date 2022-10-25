@@ -280,6 +280,7 @@ footer {
         height: 75px;
         width: 100%;
         flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .choice-img {
