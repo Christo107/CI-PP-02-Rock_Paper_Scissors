@@ -122,4 +122,6 @@ function resetGame() {
    playerScoreSpan.innerText = 0;
    computerScoreSpan.innerText = 0;
    resultMessage.innerHTML = "Game restarted!";
+   playerChoiceImg.src = `assets/images/rock_paper_scissors.png`;
+   computerChoiceImg.src = `assets/images/rock_paper_scissors.png`;
 }
