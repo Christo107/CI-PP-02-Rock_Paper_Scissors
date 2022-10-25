@@ -246,16 +246,24 @@ footer {
     .choice-area {
         min-height: 300px;
     }
+
+    #game-container {
+        width: 100vw;
+    }
 }
 
 @media screen and (max-width: 360px) {
+    header h1 {
+        margin: 5px;
+    }
+
     .choice-container {
         flex-direction: column;
         max-height: 60vh;
     }
 
     .choice-area {
-        min-height: 185px;
+        min-height: 125px;
         width: 100%;
         flex-direction: row;
     }
@@ -268,6 +276,8 @@ footer {
 
     #versus-container {
         height: 75px;
+        width: 100%;
+        flex-direction: row;
     }
 
     .choice-img {
@@ -280,11 +290,12 @@ footer {
         font-size: .85em;
     }
 
+    .restart-game-btn {
+        width: 75px;
+        height: 75px;
+    }
+
     #result-text {
         font-size: 1.5em;
     }
-}
-
-@media screen and (max-width: 600px) {
-
 }
