@@ -3,18 +3,15 @@
  */
 // Constants declaration code below based on Code Institute Rock paper Scissors game
 const buttons = document.getElementsByClassName("option-btns");
-const playerScoreSpan = document.getElementById("player-score").innerHTML;
-const computerScoreSpan = document.getElementById("computer-score").innerHTML;
+const playerScoreSpan = document.getElementById("player-score");
+const computerScoreSpan = document.getElementById("computer-score");
 const playerChoiceImg = document.getElementById("player-choice-img");
 const computerChoiceImg = document.getElementById("computer-choice-img");
 const OPTIONS = ["rock", "paper", "scissors"]
 
-// let playerScore = 0;
-// let computerScore = 0;
 let resultMessage = document.getElementById("result-text");
 let playerOption;
 let computerOption;
-let result;
 
 /**
  * Adding event listeners to buttons
@@ -22,9 +19,10 @@ let result;
 for (let button of buttons) {
     button.addEventListener("click", function() {
         playerOption = this.getAttribute("data-choice");
-        console.log(playerOption);
         playGame(playerOption);
     });
+
+    gameOver();
 }
 
 /**
@@ -98,14 +96,15 @@ function incrementComputerScoreSpan() {
  * Shows gameOver modal to congratulate winner when either player or computer reaches 10 points
  */
 function gameOver() {
-   let gameOverModal = document.getElementById("game-over-modal-container");
 
-   if(playerScoreSpan == '3') {
-      gameOverModal.classList.remove('hide');
-      gameOverModal.querySelector('h4') = "You have won the game! Congrats! Let's play again?";
-   } 
-   if(computerScoreSpan == '3') {
-      gameOverModal.classList.remove('hide');
-      gameOverModal.querySelector('h4') = "The Computer has won this game! Hard luck";
-   }
+   const gameOverModal = document.getElementById("game-over-modal-container");
+
+   if(playerScoreSpan == 3) {
+         gameOverModal.classList.remove("hide");
+         gameOverModal.querySelector('h4') = "You have won this game! Congrats!";
+    } 
+   else if(computerScoreSpan == 3) {
+         gameOverModal.classList.remove("hide");
+         gameOverModal.querySelector('h4') = "The Computer has won this game! Hard luck";
+    }
 }
