@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 /**
  * Declare constants for DOM elements and possible choices
  */
@@ -7,7 +9,7 @@ let playerScoreSpan = document.getElementById("player-score");
 let computerScoreSpan = document.getElementById("computer-score");
 const playerChoiceImg = document.getElementById("player-choice-img");
 const computerChoiceImg = document.getElementById("computer-choice-img");
-const OPTIONS = ["rock", "paper", "scissors"]
+const OPTIONS = ["rock", "paper", "scissors"];
 
 let resultMessage = document.getElementById("result-text");
 let playerOption;
@@ -104,18 +106,17 @@ function gameOver() {
 
    if(playerScore === 3) {
       document.getElementById("game-over-modal-container").classList.remove("hide");
-      gameOverModal.querySelector('h4') = "You have won this game! Congrats!";
     } 
    else if(computerScore === 3) {
       document.getElementById("game-over-modal-container").classList.remove("hide");
-      gameOverModal.querySelector('h4') = "The Computer has won this game! Hard luck";
     }
 }
 
 // Add event listener to restart game button to trigger resetGame function
-restartGameBtn = document.getElementById("restart-game").addEventListener("click", function() {
+   document.getElementById("restart-game").addEventListener("click", function() {
    resetGame();
-})
+});
+
 // Resets scores to zero and populates results message to say Game restarted!
 function resetGame() {
    playerScoreSpan.innerText = 0;
