@@ -30,7 +30,7 @@ The live website on Github pages can be accessed at the following link: [View my
     * [Validator Testing](#validator-testing)
     * [Responsiveness Testing](#responsiveness-testing)
     * [Accessibility Testing](#accessibility-testing)
-    * [Usability Testing](#usability-testing)
+    * [User Story Testing](#user-story-testing)
 * [Bugs](#Bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
@@ -164,8 +164,18 @@ The W3C Markup validator retuned several erros on the 3rd September when tested.
 #### Firefox
 - Firefox's built in colour blindness simulator was used to identify any areas where sufficient colour contrast was not present. No such areas were found.
 
-### Usability Testing
+### User Story Testing
 - I used the user stories to perform manual testing on the game to see whether there were any blockers to the user goals identified above. These are the results:
+
+#### Client Goals
+    - I want the game to be responsive so that is able to be played on multiple devices including laptops, tablets and mobile
+        * The game was checked on multiple devices for responsiveness. There was an issue on small mobile devices where content overlapped but this was addressed and fixed. The game displays adequately on all size devices tested.
+    - I want the game to be straightforward with clearly understandable instructions to avoid confusion
+        * The game contains easy to understand instructions on how to start the game and how you win points. The instructions are displayed throughout the game for easy access.
+    - I want the game to be accessible to all with clear text, imagery and image descriptions where appropriate
+        * The font, imagery and layout provide the user with a clean and ncluttered interface in which to play the game. alt tags have been added to images, and the colours used exceed the requirements for colour contrast as confirmed by tests performed on A11y.com website checker.
+    
+#### User Goals
     - As a User I want to know what the game is when I first arrive on the site so I can decide if I want to play
         * The clear game title at the top of the page and example imagery present in the game area demonstrates what the game is and what it will involve
     - As a User I want be able to read the rules of the game easily so I understand what I have to do to play
