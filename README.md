@@ -3,7 +3,7 @@ This website was designed and developed as a simple game that can be enjoyed by 
 
 To play the game is very simple with a player needing to select one of the three possible choices - Rock, Paper or Scissors to start the game, and then the computer randomly chooses its option. 
 
-![Responsive Mockup](#)
+![Responsive Mockup](./assets/images/readme_images/responsive_layouts.png)
 
 The live website on Github pages can be accessed at the following link: [View my Live Website on Github Pages here](https://christo107.github.io/CI-PP-02-Rock_Paper_Scissors/)
 
