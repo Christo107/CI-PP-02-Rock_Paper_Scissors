@@ -12,13 +12,16 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
 </head>
 <body>
+<!-- header section with game name and description -->
     <header>
         <h1>ROCK PAPER SCISSORS</h1>
         <p>A game of chance for players of all ages</p>
     </header>
+<!-- main page area -->
     <main>
         <div id="game-container" class="container">
             <span id="result-text"></span>
+<!-- player and computer choice area -->
             <div id="choice-container" class="choice-container">
                 <div id="player-area" class="choice-area">
                     <div class="choice-area-header">
@@ -41,6 +44,7 @@
                 </div>
                 
             </div>
+<!-- controls area for option selection -->
             <div class="controls-container">
                 <h3>Choose your weapon below to start the game!</h3>
                 <div id="choice-selection-btns">
@@ -55,14 +59,15 @@
                     <p>Scissors cuts Paper</p>
                 </div>
             </div>  
-        </div>
-        
+        </div>  
     </main>
+<!-- game over modal not - bug causing issue where modal does not appear oce user reaches 10 points -->
     <div id="game-over-modal-container" class="game-over-modal-container hide">
         <dialog open id="game-over" class="game-over">
             <h4 id="game-over-heading">You have won the game!</h4>
         </dialog>
     </div>
+<!-- footer area with social media links -->
     <footer>
         <div class="footer-links">
             <a href="https://github.com/Christo107?tab=repositories" target="_blank" rel="noopener" aria-label="visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
