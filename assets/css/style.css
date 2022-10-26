@@ -274,6 +274,11 @@ footer {
 }
 
 @media screen and (max-width: 360px) {
+    header h1 {
+        margin: 5px;
+        font-size: 1.25em;
+    }
+
     .choice-container {
         flex-direction: column;
         max-height: 60vh;
