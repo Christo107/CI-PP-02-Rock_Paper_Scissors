@@ -79,7 +79,7 @@ The live website on Github pages can be accessed at the following link: [View my
 #### User Goals
 - As a User I want to know what the game is when I first arrive on the site so I can decide if I want to play
 - As a User I want be able to read the rules of the game easily so I understand what I have to do to play
-- As a User I want to know how to start the game so i can enjoy playing
+- As a User I want to know how to start the game so I can enjoy playing
 - As a User I want to be able to reset the game at any point so I can try again to win
 - As a User I want to be able to exit the game at any point when I have played enough
 
@@ -146,6 +146,8 @@ The W3C Markup validator retuned several erros on the 3rd September when tested.
     - Before final deployment, no errors were returned when passing through the offical [W3C validator](#)
 - CSS
     - Before final deployment, no errors were found when passing through the official [(Jigsaw) validator](#)
+-Javascript
+    - The javascript code was run through jshint to check for any errors. Thankfully, no errors were identified. 
 
 ### Responsiveness Testing
 - The website was tested for responsiveness using the Chrome and Firefox browsers and their associated Developer Tools. 
@@ -153,12 +155,26 @@ The W3C Markup validator retuned several erros on the 3rd September when tested.
 - A variety of screen sizes were checked for responsiveness using the Developer tools from 4K displays at 2560px wide, laptop sizes 1440px and 1024px, tablets at 768px, and a variety of mobile sizes down to 320px width. All elements maintained functionality and visibility in all scenarios. Real world testing was also conducted on physical devices of various sizes to ensure integrity. No issue was encountered on these.
 - A Lighthouse report was run several times to gauge the performance, accessibility, best practice and SEO scores. 
 
-![Lighthouse scoring](#)![Lighthouse scoring](#)![Lighthouse scoring](#)
+ - ![Lighthouse scoring Desktop](./assets/images/readme_images/lighthouse_report_desktop.png)
+ - ![Lighthouse scoring Mobile](./assets/images/readme_images/lighthouse_report_mobile.png)
 
 ### Accessibility Testing
 - Multiple tests were run on the website using Lighthouse and A11y Color Contrast Accessibility Validator to examine any accessibility issues. https://color.a11y.com/
 #### Firefox
-- Firefox's built in colour blindness simulator was used to identify any areas where sufficient colour contrast was not present.
+- Firefox's built in colour blindness simulator was used to identify any areas where sufficient colour contrast was not present. No such areas were found.
+
+### Usability Testing
+- I used the user stories to perform manual testing on the game to see whether there were any blockers to the user goals identified above. These are the results:
+    - As a User I want to know what the game is when I first arrive on the site so I can decide if I want to play
+        * The clear game title at the top of the page and example imagery present in the game area demonstrates what the game is and what it will involve
+    - As a User I want be able to read the rules of the game easily so I understand what I have to do to play
+        * The game rules section underneath the controls area are visible all the time so the user is able to read and understand them before and while playing
+    - As a User I want to know how to start the game so I can enjoy playing
+        * The instruction message above the controls area shows the user how to start the game by choosing one of the options
+    - As a User I want to be able to reset the game at any point so I can try again to win
+        * Once the game commences, a restart button appears in the centre of the screen to be cearly visible and easiliy accessible for the user to restart the game at any point.
+    - As a User I want to be able to exit the game at any point when I have played enough
+        * There are no blockers for the user to exit the game at any point. There are no popups to dissuade the user from leaving when they choose to do so.
 
 ## Deployment
 I used the Gitpod to develop th website and the site was deployed using GitHub Pages. Please see details below:
