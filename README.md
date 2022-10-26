@@ -52,22 +52,22 @@ The live website on Github pages can be accessed at the following link: [View my
     [Player area image](./assets/images/readme_images/player_area.png)
     - At the base of the game area is the controls and rules section. A message instructing the player to make a choice is shown to direct the user how to start the game. Below this, three circle buttons are displayed with a thumbnail image of each option and its corresponding name.
     - Underneath the controls area is a small container displaying the simple rules to the player. They are always displayed for usability and reference.
-    [Player area image](./assets/images/readme_images/controls_area.png)
+    [Controls area image](./assets/images/readme_images/controls_area.png)
 
 ![Game Area Image](./assets/images/readme_images/game_area.png)
 
 - #### **Footer**
     - This section is simple and only contains links to the developer's Github repositories and linkedin pages. It also contains a copyright notice and the name of the developer. All links open in a new tab.
 
-[Footer section image](./assets/images/readme_images/footer_area.png))
+[Footer section image](./assets/images/readme_images/footer_area.png)
 
 ## User Experience
 
 ### User Stories
 
 #### Client Goals
-- I want the game to be responsive and so that is able to be played on multiple devices including laptops, tablets and mobile
-- I want the game to be straightforward with clearly understandable instructions
+- I want the game to be responsive so that is able to be played on multiple devices including laptops, tablets and mobile
+- I want the game to be straightforward with clearly understandable instructions to avoid confusion
 - I want the game to be accessible to all with clear text, imagery and image descriptions where appropriate
 
 #### User Goals
@@ -80,9 +80,9 @@ The live website on Github pages can be accessed at the following link: [View my
 ## Design
 
 ### Colour Palette
-- The colour palette was chosen to provide a simple easy to view interface for the game. Only one signature colour was used to avoid any unnecessary clash of colours.
+- The colour palette was chosen to provide a simple easy to view interface for the game. Only one signature colour was used to avoid any unnecessary clash of colours with a lighter shade added for the press button effect.
 
-![Colour palette for the website](#)
+![Colour palette for the website](./assets/images/readme_images/colour_palette.png)
 
 
 ### Typography
