@@ -124,6 +124,7 @@ The live website on Github pages can be accessed at the following link: [View my
 ### Languages used
 - HTML5
 - CSS3
+- Javascript
 
 ### Frameworks, Libraries and Programs used
 - [GitHub](https://github.com)
@@ -168,24 +169,24 @@ The W3C Markup validator retuned several erros on the 3rd September when tested.
 - I used the user stories to perform manual testing on the game to see whether there were any blockers to the user goals identified above. These are the results:
 
 #### Client Goals
-    - I want the game to be responsive so that is able to be played on multiple devices including laptops, tablets and mobile
-        * The game was checked on multiple devices for responsiveness. There was an issue on small mobile devices where content overlapped but this was addressed and fixed. The game displays adequately on all size devices tested.
-    - I want the game to be straightforward with clearly understandable instructions to avoid confusion
-        * The game contains easy to understand instructions on how to start the game and how you win points. The instructions are displayed throughout the game for easy access.
-    - I want the game to be accessible to all with clear text, imagery and image descriptions where appropriate
-        * The font, imagery and layout provide the user with a clean and ncluttered interface in which to play the game. alt tags have been added to images, and the colours used exceed the requirements for colour contrast as confirmed by tests performed on A11y.com website checker.
+1. I want the game to be responsive so that is able to be played on multiple devices including laptops, tablets and mobile
+    * The game was checked on multiple devices for responsiveness. There was an issue on small mobile devices where content overlapped but this was addressed and fixed. The game displays adequately on all size devices tested.
+2. I want the game to be straightforward with clearly understandable instructions to avoid confusion
+    * The game contains easy to understand instructions on how to start the game and how you win points. The instructions are displayed throughout the game for easy access.
+3. I want the game to be accessible to all with clear text, imagery and image descriptions where appropriate
+    * The font, imagery and layout provide the user with a clean and ncluttered interface in which to play the game. alt tags have been added to images, and the colours used exceed the requirements for colour contrast as confirmed by tests performed on A11y.com website checker.
     
 #### User Goals
-    - As a User I want to know what the game is when I first arrive on the site so I can decide if I want to play
-        * The clear game title at the top of the page and example imagery present in the game area demonstrates what the game is and what it will involve
-    - As a User I want be able to read the rules of the game easily so I understand what I have to do to play
-        * The game rules section underneath the controls area are visible all the time so the user is able to read and understand them before and while playing
-    - As a User I want to know how to start the game so I can enjoy playing
-        * The instruction message above the controls area shows the user how to start the game by choosing one of the options
-    - As a User I want to be able to reset the game at any point so I can try again to win
-        * Once the game commences, a restart button appears in the centre of the screen to be cearly visible and easiliy accessible for the user to restart the game at any point.
-    - As a User I want to be able to exit the game at any point when I have played enough
-        * There are no blockers for the user to exit the game at any point. There are no popups to dissuade the user from leaving when they choose to do so.
+1. As a User I want to know what the game is when I first arrive on the site so I can decide if I want to play
+    * The clear game title at the top of the page and example imagery present in the game area demonstrates what the game is and what it will involve
+2. As a User I want be able to read the rules of the game easily so I understand what I have to do to play
+    * The game rules section underneath the controls area are visible all the time so the user is able to read and understand them before and while playing
+3. As a User I want to know how to start the game so I can enjoy playing
+    * The instruction message above the controls area shows the user how to start the game by choosing one of the options
+4. As a User I want to be able to reset the game at any point so I can try again to win
+    * Once the game commences, a restart button appears in the centre of the screen to be cearly visible and easiliy accessible for the user to restart the game at any point.
+5. As a User I want to be able to exit the game at any point when I have played enough
+     * There are no blockers for the user to exit the game at any point. There are no popups to dissuade the user from leaving when they choose to do so.
 
 ## Deployment
 I used the Gitpod to develop th website and the site was deployed using GitHub Pages. Please see details below:
