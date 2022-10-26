@@ -30,6 +30,7 @@ The live website on Github pages can be accessed at the following link: [View my
     * [Validator Testing](#validator-testing)
     * [Responsiveness Testing](#responsiveness-testing)
     * [Accessibility Testing](#accessibility-testing)
+    * [Usability Testing](#usability-testing)
 * [Bugs](#Bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
@@ -201,6 +202,9 @@ The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Pap
 
 - Some game javascript code was based on Code Institute's Rock Paper Scissors example. See code comments for details of which code segments this applies to.
 - Some game javascript code was based on Code Institute's Love Maths example. See code comments for details of which code segments this applies to.
+- Several tutorials on developing a Rock Paper Scissors game were viewed but no code was used directly from these tutorials and were used solely for inspiration on ho to implement the game. The tutorials were as follows:
+    * Web Dev Simplified https://www.youtube.com/watch?v=1yS-JV4fWqY
+    * Code with Ania Kubow https://www.youtube.com/watch?v=RwFeg0cEZvQ
 
 ### Content
 
