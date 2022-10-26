@@ -136,6 +136,7 @@ The live website on Github pages can be accessed at the following link: [View my
 - [Coolers.co](https://coolors.co)
 - [Chrome Dev Tools](https://www.google.com/intl/en_ie/chrome/)
 - [A11y color contrast validator](https://color.a11y.com/Contrast/)
+- [Favicon.io](https://favicon.io/)
 
 ## Testing
 The website was tested for markup and CSS validation, responsive design and accessibility using multiple browsers including Chrome, EDGE, and Firefox.
@@ -189,12 +190,20 @@ The W3C Markup validator retuned several erros on the 3rd September when tested.
      * There are no blockers for the user to exit the game at any point. There are no popups to dissuade the user from leaving when they choose to do so.
 
 ## Deployment
-I used the Gitpod to develop th website and the site was deployed using GitHub Pages. Please see details below:
+I used Gitpod to develop the website and the site was deployed using GitHub Pages. Please see details below:
 
 - The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+    - In the GitHub repository (https://github.com/Christo107/CI-PP-02-Rock_Paper_Scissors), navigate to the Settings tab 
+    - On the left hand side, locate the Pages section
+    - From the source section drop-down menu, select the main branch and save
+    - Once the main branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+- It can also be forked via the following steps:
+    - Log in to GitHub and locate the repository again, as described above.
+    - At the top right corner of the repository, you will see a "Fork" button. Click on it.
+    - You will then be asked where you want to save it, so choose a location.
+    - You now should have a copy of this repository in your own GitHub account.
+
 
 The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Paper_Scissors/
 
