@@ -61,6 +61,12 @@ The live website on Github pages can be accessed at the following link: [View my
 
 [Footer section image](./assets/images/readme_images/footer_area.png)
 
+### Future Features
+
+- #### Gameover modal
+    - This feature will occur when either the player or computer reaches 10 points. At that point, a modal will appear congratulating the winner and invite the player to either play again or exit the game. 
+    - This feature is currently not included due to a known bug that is blocking the modl from appearing.
+
 ## User Experience
 
 ### User Stories
@@ -97,7 +103,13 @@ The live website on Github pages can be accessed at the following link: [View my
 ### Wireframes
 - I designed the website firstly through hand drawn sketches that were then turned into basic wireframes on Figma, before being made into high fidelity wireframes.
 
-![Wireframe selection](#)
+- [Desktop Wireframe](./assets/images/readme_images/wireframes/desktop_wireframe.png)
+- [Tablet Wireframe](./assets/images/readme_images/wireframes/tablet_wireframe.png)
+- [Mobile Wireframe](./assets/images/readme_images/wireframes/mobile_wireframe.png)
+- [Desktop High Fidelity Wireframe](./assets/images/readme_images/wireframes/desktop_high_fidelity.png)
+- [Tablet High Fidelity Wireframe](./assets/images/readme_images/wireframes/tablet_high_fidelity.png)
+- [Mobile High Fidelity Wireframe](./assets/images/readme_images/wireframes/mobile_high_fidelity.png)
+
 
 
 ### Accessibility
@@ -144,7 +156,7 @@ The W3C Markup validator retuned several erros on the 3rd September when tested.
 ![Lighthouse scoring](#)![Lighthouse scoring](#)![Lighthouse scoring](#)
 
 ### Accessibility Testing
-- Multiple tests were run on the website using Lighthouse and A11y Color Contrast Accessibility Validator to examine any accessibility issues.
+- Multiple tests were run on the website using Lighthouse and A11y Color Contrast Accessibility Validator to examine any accessibility issues. https://color.a11y.com/
 #### Firefox
 - Firefox's built in colour blindness simulator was used to identify any areas where sufficient colour contrast was not present.
 
@@ -165,7 +177,7 @@ The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Pap
 ![Overlapping Content Bug](./assets/images/bugs/overlapping_%20content_bug.png)
 
 ### Known Bugs
-- GameOver function is not triggering once player or computer reaches 10 points. At this point, a gameOver modal should be revealed annoncing the winner, however this is not working at present.
+- GameOver function is not triggering once player or computer reaches 10 points. At this point, a gameOver modal should be revealed announcing the winner, however this is not working at present. This is a feature I hope to add to future releases of the game.
 
 ## Credits
 
