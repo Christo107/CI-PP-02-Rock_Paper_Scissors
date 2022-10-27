@@ -66,10 +66,8 @@ The live website on Github pages can be accessed at the following link: [View my
 
 ### Future Features
 
-- #### Gameover modal
-    - This feature will occur when either the player or computer reaches 10 points. At that point, a modal will appear congratulating the winner and invite the player to either play again or exit the game. 
-    - This feature is currently not included due to a known bug that is blocking the modl from appearing.
-
+- #### Leaderboard
+    - I would like to add a Leaderboard in future releases so that players can keep track of their scores and try to beat them.
 ## User Experience
 
 ### User Stories
@@ -243,4 +241,4 @@ The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Pap
 
 ## Acknowledgements
  - The CI students who peer reviewed my website and gave feedback
- - Daniel Maher on hs assistance with a problem I encountered.
+ - Daniel Maher on his assistance with a problem I encountered.
