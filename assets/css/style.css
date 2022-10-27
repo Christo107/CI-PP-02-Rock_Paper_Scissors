@@ -290,7 +290,7 @@ footer {
 }
 
 /* media queries */
-
+/* styles for screens with max 768px widths */
 @media screen and (max-width: 768px) {
     header h1 {
         margin: 5px;
@@ -303,8 +303,12 @@ footer {
     #game-container {
         width: 100vw;
     }
+    
+    #result-text {
+        font-size: 1.25em;
+    }
 }
-
+/* styles for screens of 360px and below */
 @media screen and (max-width: 360px) {
     header h1 {
         margin: 5px;
@@ -350,16 +354,12 @@ footer {
         height: 75px;
     }
 
-    #result-text {
-        font-size: 1.5em;
-    }
-
     .controls-container {
         margin-top: -25px;
     }
 }
-
-@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+/* styles for mobile landscape screens of 576px height and below */
+@media only screen and (max-height: 576px) and (orientation: landscape) {
     .choice-area {
         min-height: 200px;
     }
