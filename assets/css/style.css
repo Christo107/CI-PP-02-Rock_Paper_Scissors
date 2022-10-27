@@ -170,12 +170,20 @@ header h1 {
     color: #ccc;
 }
 
-.large-btn {
-    height: 125px;
-    width: 125px;
+.restart-game-btn2 {
+    height: 100px;
+    width: 100px;
     font-size: 1em;
+    color: #ccc;
+    background-color: rgb(4, 80, 88);
 }
 
+.exit-game-btn {
+    height: 100px;
+    width: 100px;
+    font-size: 1em;
+    background-color: #ccc;
+}
 
 /* user choice area styles */
 .thumbnail-choice-img {
