@@ -23,8 +23,6 @@ for (let button of buttons) {
         playerOption = this.getAttribute("data-choice");
         playGame(playerOption);
     });
-
-    gameOver();
 }
 
 /**
@@ -43,6 +41,7 @@ function playGame(playerOption) {
 
     document.getElementById("restart-game").classList.remove('hide');
     checkWinner();
+    gameOver();
 }
 
 /**
@@ -102,10 +101,10 @@ function gameOver() {
    let playerScore = parseInt(document.getElementById("player-score").innerText);
    let computerScore = parseInt(document.getElementById("computer-score").innerText);
 
-   if(playerScore === 3) {
+   if(playerScore === 2) {
       document.getElementById("game-over-modal-container").classList.remove("hide");
     } 
-   else if(computerScore === 3) {
+   else if(computerScore === 2) {
       document.getElementById("game-over-modal-container").classList.remove("hide");
     }
 }

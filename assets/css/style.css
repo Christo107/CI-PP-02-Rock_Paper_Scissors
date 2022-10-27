@@ -202,7 +202,8 @@ header h1 {
 
 /* game over modal */
 .game-over {
-    width: 45vw;
+    width: 750px;
+    max-width: 85vw;
     height: 50vh;
     color:rgb(32, 32, 32);
     background-color: #ccc;
@@ -216,6 +217,11 @@ header h1 {
     top: 150px; 
     margin: auto;
     z-index: 999;
+    padding: 20px;
+}
+
+#game-over-heading {
+    font-size: 200%;
 }
 /* footer styles */
 footer {
