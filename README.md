@@ -157,7 +157,7 @@ The W3C Markup validator retuned several erros on the 3rd September when tested.
 ### Responsiveness Testing
 - The website was tested for responsiveness using the Chrome and Firefox browsers and their associated Developer Tools. 
 #### Chrome
-- A variety of screen sizes were checked for responsiveness using the Developer tools from 4K displays at 2560px wide, laptop sizes 1440px and 1024px, tablets at 768px, and a variety of mobile sizes down to 320px width. All elements maintained functionality and visibility in all scenarios. Real world testing was also conducted on physical devices of various sizes to ensure integrity. No issue was encountered on these.
+- A variety of screen sizes were checked for responsiveness using the Developer tools from 4K displays at 2560px wide, laptop sizes 1440px and 1024px, tablets at 768px, and a variety of mobile sizes down to 320px width. All elements maintained functionality and visibility in all scenarios, however, there were some issues with mobile landscape being able to fit all the componenets on the screen at the same time(see fixed bugs section below). Real world testing was also conducted on physical devices of various sizes to ensure integrity. No issue was encountered on these apart from the mobile landscape issue.
 - A Lighthouse report was run several times to gauge the performance, accessibility, best practice and SEO scores. 
 
  - ![Lighthouse scoring Desktop](./assets/images/readme_images/lighthouse_report_desktop.png)
@@ -215,6 +215,9 @@ The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Pap
 [Overlapping Content Bug](./assets/images/bugs/overlapping_%20content_bug.png)
 - GameOver modal was not appearing when either the player or computer reached the maximum 10 points. The cause was identified as the function was being called in the wrong place. The gameover modal now displays as below:
 [Winning Game Over Modal Image](./assets/images/readme_images/win_game_modal.png)
+- On mobile landscape, there were issues around fitting all elements on the screen. A media query specifically for mobile landscape was added to fix this issue, however some styling issues remain which will be fixed in future releases.
+[Mobile Landscape Bug](./assets/images/bugs/mobile_landscape_bug.jpg)
+[Mobile Landscape Bug Fixed](./assets/images/bugs/mobile_landscape_bug_fixed.jpg)
 
 ### Known Bugs
 
