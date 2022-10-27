@@ -148,11 +148,11 @@ The W3C Markup validator retuned several erros on the 3rd September when tested.
 
 ### Validator Testing
 - HTML
-    - Before final deployment, no errors were returned when passing through the offical [W3C validator](#)
+    - Before final deployment, no errors were returned when passing through the offical W3C Validator
 - CSS
-    - Before final deployment, no errors were found when passing through the official [(Jigsaw) validator](#)
--Javascript
-    - The javascript code was run through jshint to check for any errors. Thankfully, no errors were identified. 
+    - Before final deployment, no errors were found when passing through the official W3C Jigsaw CSS Validator
+- Javascript
+    - The javascript code was run through jshint to check for any errors. Thankfully, no errors were identified.
 
 ### Responsiveness Testing
 - The website was tested for responsiveness using the Chrome and Firefox browsers and their associated Developer Tools. 
