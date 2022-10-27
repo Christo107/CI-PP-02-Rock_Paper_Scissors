@@ -54,7 +54,7 @@ The live website on Github pages can be accessed at the following link: [View my
     - At the base of the game area is the controls and rules section. A message instructing the player to make a choice is shown to direct the user how to start the game. Below this, three circle buttons are displayed with a thumbnail image of each option and its corresponding name.
     - Underneath the controls area is a small container displaying the simple rules to the player. They are always displayed for usability and reference.
     [Controls area image](./assets/images/readme_images/controls_area.png)
-    - Once the player or computer reaches 10 points, a GameOver modal is displayed congratulating or comminserating with the player. Buttons are displayed where the user can either restart the game or exit the game.
+    - Once the player or computer reaches 10 points, a GameOver modal is displayed congratulating or comminserating with the player. Buttons are displayed where the user can either restart the game or exit the game. Restarting triggers the reset function which clears current scores and resets choice images to the default. Exit game closes the modal and resets with a message in the results area inviting the user to come back soon and instructing that they can now navigate away from the website.
     [Game Over Modal](./assets/images/readme_images/win_game_modal.png)
 
 ![Game Area Image](./assets/images/readme_images/game_area.png)

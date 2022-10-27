@@ -89,6 +89,7 @@ header h1 {
 .controls-container {
     margin-top: -100px;
     padding: 0 10px;
+    z-index: 1;
 }
 
 .rules-container {
@@ -111,7 +112,7 @@ header h1 {
     align-items: center;
 }
 
-/* button styles */ 
+/* button styles */
 #choice-selection-btns {
     max-width: 100vw;
     display:flex;
@@ -169,7 +170,7 @@ header h1 {
     background-color:rgb(32, 32, 32);
     color: #ccc;
 }
-
+/* game over modal buttons */
 .restart-game-btn2 {
     height: 100px;
     width: 100px;
@@ -356,4 +357,49 @@ footer {
     .controls-container {
         margin-top: -25px;
     }
+}
+
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+    .choice-area {
+        min-height: 200px;
+    }
+
+    .choice-container {
+        min-height: 75vh;
+        width: 100vw;
+        margin-top: 0;
+    }
+
+    #game-container {
+        padding-top: 0;
+        width: 100vw;
+    }
+
+    .controls-container {
+        max-width : 40vw;
+        margin-top: -80px;
+    }
+    
+    .controls-container h3 {
+        font-size: 1em;
+    }
+
+    #result-text {
+        font-size: 1.25em;
+    }
+
+    .choice-img {
+        margin-top: 85px;
+    }
+
+
+    .option-btns {
+        height: 75px;
+        width: 75px;
+        margin: 0 5px;
+        font-size: .85em;
+    }
+
+    #choice-selection-btns {
+        margin-top: 5px;  
 }
