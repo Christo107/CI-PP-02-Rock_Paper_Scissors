@@ -117,6 +117,11 @@ function gameOver() {
    resetGame();
 });
 
+   document.getElementById("restart-game-btn-modal").addEventListener("click", function() {
+      document.getElementById("game-over-modal-container").classList.add("hide");
+      resetGame();
+   });
+
 // Resets scores to zero and populates results message to say Game restarted!
 function resetGame() {
    playerScoreSpan.innerText = 0;
