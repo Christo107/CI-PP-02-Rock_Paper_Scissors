@@ -100,12 +100,15 @@ function gameOver() {
 
    let playerScore = parseInt(document.getElementById("player-score").innerText);
    let computerScore = parseInt(document.getElementById("computer-score").innerText);
+   let gameOverHeading = document.getElementById("game-over-heading");
 
    if(playerScore === 2) {
       document.getElementById("game-over-modal-container").classList.remove("hide");
+      gameOverHeading.innerText = "Congratulations! You have won the game!";
     } 
    else if(computerScore === 2) {
       document.getElementById("game-over-modal-container").classList.remove("hide");
+      gameOverHeading.innerText = "Hard luck! The computer has won this time!";
     }
 }
 

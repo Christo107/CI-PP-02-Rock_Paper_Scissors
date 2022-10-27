@@ -170,6 +170,13 @@ header h1 {
     color: #ccc;
 }
 
+.large-btn {
+    height: 125px;
+    width: 125px;
+    font-size: 1em;
+}
+
+
 /* user choice area styles */
 .thumbnail-choice-img {
     height: 50%;
@@ -221,8 +228,18 @@ header h1 {
 }
 
 #game-over-heading {
-    font-size: 200%;
+    font-size: 5vmin;
 }
+
+#game-over-btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 /* footer styles */
 footer {
     position: absolute;
