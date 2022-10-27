@@ -125,7 +125,9 @@ function gameOver() {
    });
 
    document.getElementById("exit-game-btn-modal").addEventListener("click", function() {
-      gameOverHeading.innerText = `Come back soon!
+      document.getElementById("game-over-modal-container").classList.add("hide");
+      resetGame();
+      resultMessage.innerText = `Come back soon!
       You can now navigate away from the website`;
    });
 

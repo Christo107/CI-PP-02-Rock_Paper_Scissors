@@ -43,7 +43,7 @@ The live website on Github pages can be accessed at the following link: [View my
     - The header contains the logo(name of the game) in a simple easy to read font to announce what the game is to the user.
     - A subtitle also provides a description of the game and who the game is suitable for.
 
-![Header Image](./assets/images/readme_images/header_area.png)
+[Header Image](./assets/images/readme_images/header_area.png)
 
 - #### **Game Area Section**
     - This section contains the main game elements. The player can choose their 'weapon' from the three options and ultimately try to win points. It is divided in to a result announcement section, the scores area, player and computer choice area and finally the controls area.
@@ -54,6 +54,8 @@ The live website on Github pages can be accessed at the following link: [View my
     - At the base of the game area is the controls and rules section. A message instructing the player to make a choice is shown to direct the user how to start the game. Below this, three circle buttons are displayed with a thumbnail image of each option and its corresponding name.
     - Underneath the controls area is a small container displaying the simple rules to the player. They are always displayed for usability and reference.
     [Controls area image](./assets/images/readme_images/controls_area.png)
+    - Once the player or computer reaches 10 points, a GameOver modal is displayed congratulating or comminserating with the player. Buttons are displayed where the user can either restart the game or exit the game.
+    [Game Over Modal](./assets/images/readme_images/win_game_modal.png)
 
 ![Game Area Image](./assets/images/readme_images/game_area.png)
 
