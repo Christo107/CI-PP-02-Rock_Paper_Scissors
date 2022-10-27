@@ -210,8 +210,9 @@ The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Pap
 ## Bugs
 ### Fixed Bugs
 - Overlapping Content Bug: This bug appeared on small mobile devices where the computer choice area was overlapping the controls area. This was fixed by adjusting the margin of the controls area to position it further down the page.
-
-![Overlapping Content Bug](./assets/images/bugs/overlapping_%20content_bug.png)
+[Overlapping Content Bug](./assets/images/bugs/overlapping_%20content_bug.png)
+- GameOver modal was not appearing when either the player or computer reached the maximum 10 points. The cause was identified as the function was being called in the wrong place. The gameover modal now displays as below:
+[Winning Game Over Modal Image](./assets/images/readme_images/win_game_modal.png)
 
 ### Known Bugs
 
