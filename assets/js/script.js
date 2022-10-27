@@ -12,6 +12,7 @@ const OPTIONS = ["rock", "paper", "scissors"];
 let resultMessage = document.getElementById("result-text");
 let playerOption;
 let computerOption;
+let gameOverHeading = document.getElementById("game-over-heading");
 
 
 
@@ -100,15 +101,16 @@ function gameOver() {
 
    let playerScore = parseInt(document.getElementById("player-score").innerText);
    let computerScore = parseInt(document.getElementById("computer-score").innerText);
-   let gameOverHeading = document.getElementById("game-over-heading");
 
    if(playerScore === 2) {
       document.getElementById("game-over-modal-container").classList.remove("hide");
-      gameOverHeading.innerText = "Congratulations! You have won the game!";
+      gameOverHeading.innerText = `Congratulations!
+      You have won the game!`;
     } 
    else if(computerScore === 2) {
       document.getElementById("game-over-modal-container").classList.remove("hide");
-      gameOverHeading.innerText = "Hard luck! The computer has won this time!";
+      gameOverHeading.innerText = `Hard luck!
+      The computer has won this time!`;
     }
 }
 
@@ -120,6 +122,11 @@ function gameOver() {
    document.getElementById("restart-game-btn-modal").addEventListener("click", function() {
       document.getElementById("game-over-modal-container").classList.add("hide");
       resetGame();
+   });
+
+   document.getElementById("exit-game-btn-modal").addEventListener("click", function() {
+      gameOverHeading.innerText = `Come back soon!
+      You can now navigate away from the website`;
    });
 
 // Resets scores to zero and populates results message to say Game restarted!

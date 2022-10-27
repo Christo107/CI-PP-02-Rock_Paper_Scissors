@@ -214,7 +214,6 @@ The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Pap
 ![Overlapping Content Bug](./assets/images/bugs/overlapping_%20content_bug.png)
 
 ### Known Bugs
-- GameOver function is not triggering once player or computer reaches 10 points. At this point, a gameOver modal should be revealed announcing the winner, however this is not working at present. This is a feature I hope to add to future releases of the game.
 
 ## Credits
 
