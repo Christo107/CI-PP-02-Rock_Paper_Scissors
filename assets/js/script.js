@@ -102,12 +102,12 @@ function gameOver() {
    let playerScore = parseInt(document.getElementById("player-score").innerText);
    let computerScore = parseInt(document.getElementById("computer-score").innerText);
 
-   if(playerScore === 2) {
+   if(playerScore === 10) {
       document.getElementById("game-over-modal-container").classList.remove("hide");
       gameOverHeading.innerText = `Congratulations!
       You have won the game!`;
     } 
-   else if(computerScore === 2) {
+   else if(computerScore === 10) {
       document.getElementById("game-over-modal-container").classList.remove("hide");
       gameOverHeading.innerText = `Hard luck!
       The computer has won this time!`;

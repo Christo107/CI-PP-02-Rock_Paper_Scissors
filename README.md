@@ -212,14 +212,15 @@ The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Pap
 ## Bugs
 ### Fixed Bugs
 - Overlapping Content Bug: This bug appeared on small mobile devices where the computer choice area was overlapping the controls area. This was fixed by adjusting the margin of the controls area to position it further down the page.
-[Overlapping Content Bug](./assets/images/bugs/overlapping_%20content_bug.png)
+    * [Overlapping Content Bug](./assets/images/bugs/overlapping_%20content_bug.png)
 - GameOver modal was not appearing when either the player or computer reached the maximum 10 points. The cause was identified as the function was being called in the wrong place. The gameover modal now displays as below:
-[Winning Game Over Modal Image](./assets/images/readme_images/win_game_modal.png)
+    * [Winning Game Over Modal Image](./assets/images/readme_images/win_game_modal.png)
 - On mobile landscape, there were issues around fitting all elements on the screen. A media query specifically for mobile landscape was added to fix this issue, however some styling issues remain which will be fixed in future releases.
-[Mobile Landscape Bug](./assets/images/bugs/mobile_landscape_bug.jpg)
-[Mobile Landscape Bug Fixed](./assets/images/bugs/mobile_landscape_bug_fixed.jpg)
+    * [Mobile Landscape Bug](./assets/images/bugs/mobile_landscape_bug.jpg)
+    * [Mobile Landscape Bug Fixed](./assets/images/bugs/mobile_landscape_bug_fixed.jpg)
 
 ### Known Bugs
+- Styling issues on mobile landscape
 
 ## Credits
 
@@ -227,7 +228,7 @@ The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Pap
 
 - Some game javascript code was based on Code Institute's Rock Paper Scissors example. See code comments for details of which code segments this applies to.
 - Some game javascript code was based on Code Institute's Love Maths example. See code comments for details of which code segments this applies to.
-- Several tutorials on developing a Rock Paper Scissors game were viewed but no code was used directly from these tutorials and were used solely for inspiration on ho to implement the game. The tutorials were as follows:
+- Several tutorials on developing a Rock Paper Scissors game were viewed but no code was used directly from these tutorials and were used solely for inspiration on how to implement the game. The tutorials were as follows:
     * Web Dev Simplified https://www.youtube.com/watch?v=1yS-JV4fWqY
     * Code with Ania Kubow https://www.youtube.com/watch?v=RwFeg0cEZvQ
 
@@ -241,5 +242,5 @@ The live link can be found here - https://christo107.github.io/CI-PP-02-Rock_Pap
 - The imagery used in the game was taken from (https://www.pinclipart.com/) and is free to use.
 
 ## Acknowledgements
- - My mentor for his advice and assistance
  - The CI students who peer reviewed my website and gave feedback
+ - Daniel Maher on hs assistance with a problem I encountered.
